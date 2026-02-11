@@ -1,7 +1,7 @@
 "use client";
 
+import { useRouter } from "next/navigation"; // ✅ FIXED
 import { useState } from "react";
-import { useRouter } from "next/navigation";   // ✅ FIXED
 
 export default function Login() {
   const router = useRouter();
@@ -13,7 +13,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://127.0.0.1:5000/login", {
+    const res = await fetch("https://network-anomaly-detection-r6p9.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
