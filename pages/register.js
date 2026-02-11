@@ -13,7 +13,7 @@ export default function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://network-anomaly-detection-r6p9.onrender.com", {
+    const res = await fetch("https://network-anomaly-detection-1-0xcs.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -13,7 +13,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://network-anomaly-detection-r6p9.onrender.com", {
+    const res = await fetch("hhttps://network-anomaly-detection-1-0xcs.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

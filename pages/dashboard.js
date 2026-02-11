@@ -1,14 +1,14 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import FeatureTable from "../components/FeatureTable";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import PacketGraph from "../components/PacketGraph";
-import ScoreGraph from "../components/ScoreGraph";
 import StatusCard from "../components/StatusCard";
 import TrafficGraph from "../components/TrafficGraph";
+import PacketGraph from "../components/PacketGraph";
+import FeatureTable from "../components/FeatureTable";
+import ScoreGraph from "../components/ScoreGraph";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function Dashboard() {
   const router = useRouter();
@@ -28,7 +28,7 @@ export default function Dashboard() {
     }
 
     try {
-      const res = await fetch("https://network-anomaly-detection-r6p9.onrender.com", {
+      const res = await fetch("https://network-anomaly-detection-1-0xcs.onrender.com", {
         headers: {
           Authorization: `Bearer ${token}`
         }
